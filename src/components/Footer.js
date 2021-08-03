@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next//link';
+import Link from 'next/link';
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -13,19 +14,19 @@ const Footer = () => {
         All rights reserved to ai-blogs
       </p>
       <div className="mx-auto  justify-between flex mt-4 items-center w-44 ">
-        <div className="w-10">
-          <a href="">
-            <img src="/twitter.png" alt="Twitter Logo" />
+        <div>
+          <a href="https://twitter.com/aidevv_in">
+            <Image width="40px" height="35px" src="/twitter.png" alt="Twitter Logo" />
           </a>
         </div>
-        <div className="w-10">
-          <a href="">
-            <img src="/github.png" alt="Github Logo" />
+        <div>
+          <a href="https://github.com/arifimran5">
+            <Image width="40px" height="40px" src="/github.png" alt="Github Logo" />
           </a>
         </div>
-        <div className="w-10">
-          <a href="">
-            <img src="/linkedin.png" alt="LinkedIn Logo" />
+        <div>
+          <a href="https://www.linkedin.com/in/arifimran5/">
+            <Image width="40px" height="40px" src="/linkedin.png" alt="LinkedIn Logo" />
           </a>
         </div>
       </div>
