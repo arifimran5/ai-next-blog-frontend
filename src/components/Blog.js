@@ -4,6 +4,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import styles from './Blog.module.scss';
+import Footer from './Footer';
 
 const Blog = ({ article }) => {
   const date = new Date(article.createdAt);
@@ -13,6 +14,7 @@ const Blog = ({ article }) => {
     year: date.getFullYear(),
   };
   return (
+    <>
     <div className="pt-2 mb-10 px-3 sm:px-6 md:pr-10 md:px-20 lg:pl-32 lg:max-w-5xl xl:pl-44 xl:max-w-6xl">
       <Link href={'/'}>
         <a className="font-semibold text-gray-400 hover:text-blue-500">{'👈'}Go back Home</a>
@@ -35,6 +37,8 @@ const Blog = ({ article }) => {
         {article.body}
       </ReactMarkdown>
     </div>
+    <Footer/>
+    </>
   );
 };
 

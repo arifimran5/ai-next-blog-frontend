@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './BlogHome.module.scss';
 
 import BlogThumb from './Blog-thumb';
+import Footer from './Footer';
 
 const BlogHome = ({ articles }) => {
   // console.log(articles)
@@ -72,7 +73,7 @@ const BlogHome = ({ articles }) => {
       {/* posts */}
 
       {blogArticles.length == 0 ? (
-        <p className="text-center text-2xl font-bold">No articles</p>
+        <p className="text-center text-2xl font-bold mt-8">No articles😿</p>
       ) : (
         ''
       )}
@@ -86,6 +87,7 @@ const BlogHome = ({ articles }) => {
           </Link>
         ))}
       </section>
+      <Footer />
     </>
   );
 };
