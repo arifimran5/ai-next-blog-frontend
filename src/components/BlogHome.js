@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from './BlogHome.module.scss';
 
-import BlogThumb from './Blog-thumb';
+const DynamicBlogThumb = dynamic(() => import('./Blog-thumb'));
+// import BlogThumb from './Blog-thumb';
 import Footer from './Footer';
+import styles from './BlogHome.module.scss';
 
 const BlogHome = ({ articles }) => {
   // console.log(articles)
@@ -82,7 +84,7 @@ const BlogHome = ({ articles }) => {
         {blogArticles.map((article) => (
           <Link key={article.id} href={`/articles/${article.slug}`}>
             <a className="w-max">
-              <BlogThumb post={article} />
+              <DynamicBlogThumb post={article} />
             </a>
           </Link>
         ))}
