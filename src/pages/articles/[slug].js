@@ -8,7 +8,7 @@ const BlogPage = ({ article }) => {
       <Head>
         <title>{article.title}</title>
         <meta name="description" content={article.title} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/aifavicon.svg" />
       </Head>
       <Blog article={article} />
     </>
