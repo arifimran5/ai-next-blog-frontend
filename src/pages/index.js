@@ -7,7 +7,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>ai-blogs</title>
-        <meta name="description" content="A blog by a developer" />
+        <meta name="description" content="A blog about development and problem solving by arif" />
         <link rel="icon" href="/aifavicon.svg" />
       </Head>
       <BlogHome articles={articles} />

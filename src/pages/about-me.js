@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 
 const AboutMe = () => {
   return (
     <>
+      <Head>
+        <title>About me</title>
+        <meta name="description" content="These is the about me page" />
+        <link rel="icon" href="/aifavicon.svg" />
+      </Head>
       <div className=" sm:pl-14 pt-2 md:pl-24">
         <Link href={'/'}>
           <a className=" font-bold text-gray-500 hover:text-blue-500">
